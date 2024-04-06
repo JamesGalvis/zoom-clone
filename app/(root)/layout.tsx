@@ -1,6 +1,6 @@
 function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <main>
+    <main className="h-full">
       {children}
     </main>
   )
