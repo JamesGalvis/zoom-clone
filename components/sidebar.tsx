@@ -11,7 +11,7 @@ export function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <section className="sticky top-0 left-0 flex flex-col gap-3 min-h-full w-fit  bg-dark-1 p-6 pt-28 text-neutral-300/80 max-sm:hidden lg:w-[264px]">
+    <section className="flex flex-col gap-3 min-h-full w-fit  bg-dark-1 p-6 pt-28 text-neutral-300/80 max-sm:hidden lg:w-[264px]">
       {sidebarLinks.map(({ label, imgUrl, route }, i) => {
         const isActive = pathname === route || pathname.startsWith(route + "/");
 

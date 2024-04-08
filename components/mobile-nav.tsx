@@ -44,7 +44,7 @@ export function MobileNav() {
                       href={route}
                       key={i}
                       className={cn(
-                        "flex items-center justify-start gap-3 p-3.5 rounded-lg w-full max-w-60 hover:bg-muted-foreground/25 transition-colors hover:text-white",
+                        "flex items-center justify-start gap-5 p-3.5 rounded-lg w-full max-w-60 hover:bg-muted-foreground/25 transition-colors hover:text-white",
                         {
                           "bg-blue-600 hover:bg-text-600 text-white": isActive,
                         }
