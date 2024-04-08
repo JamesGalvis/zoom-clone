@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { ClerkProvider } from "@clerk/nextjs";
+
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
@@ -17,7 +19,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn("bg-dark-2", inter.className)}>{children}</body>
+      <ClerkProvider
+        appearance={{
+          layout: {
+            logoImageUrl: "/icons/yoom-logo.svg",
+            socialButtonsVariant: "iconButton"
+          },
+          variables: {
+            colorText: "#FFF",
+            colorPrimary: "#0E78F9",
+            colorBackground: "#1A1A1A",
+            colorInputBackground: "#212121",
+            colorInputText: "#FFF",
+          }
+        }}
+      >
+        <body className={cn("bg-dark-2", inter.className)}>{children}</body>
+      </ClerkProvider>
     </html>
   );
 }

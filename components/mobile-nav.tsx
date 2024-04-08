@@ -24,8 +24,8 @@ export function MobileNav() {
           <Image
             src="/icons/hamburger.svg"
             alt="Hamburguer icon"
-            width={32}
-            height={32}
+            width={30}
+            height={30}
             className="cursor-pointer sm:hidden"
           />
         </SheetTrigger>
@@ -33,7 +33,7 @@ export function MobileNav() {
           <Logo showText />
 
           <div className="flex flex-col justify-between overflow-y-auto h-[calc(100vh-72px)]">
-            <section className="flex flex-col h-full gap-6 pt-14 text-white">
+            <section className="flex flex-col h-full gap-5 pt-12 text-white">
               {sidebarLinks.map(({ label, imgUrl, route }, i) => {
                 const isActive =
                   pathname === route || pathname.startsWith(route + "/");
@@ -44,9 +44,9 @@ export function MobileNav() {
                       href={route}
                       key={i}
                       className={cn(
-                        "flex items-center justify-start gap-3 p-3.5 rounded-lg w-full max-w-60 hover:bg-blue-600/40 transition-colors hover:text-white",
+                        "flex items-center justify-start gap-3 p-3.5 rounded-lg w-full max-w-60 hover:bg-muted-foreground/25 transition-colors hover:text-white",
                         {
-                          "bg-blue-600 hover:bg-blue-600 text-white": isActive,
+                          "bg-blue-600 hover:bg-text-600 text-white": isActive,
                         }
                       )}
                     >

@@ -20,7 +20,7 @@ export function Sidebar() {
             href={route}
             key={i}
             className={cn(
-              "flex items-center justify-start gap-4 p-3.5 rounded-lg hover:bg-blue-600/40 transition-colors hover:text-white",
+              "flex items-center justify-start gap-4 p-3.5 rounded-lg hover:bg-muted-foreground/25  transition-colors hover:text-white",
               {
                 "bg-blue-600 hover:bg-blue-600 text-white": isActive,
               }
