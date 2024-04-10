@@ -33,10 +33,10 @@ function Home() {
 
   return (
     <section className="flex flex-col gap-7 size-full text-white">
-      <h1 className="text-3xl font-bold">Home</h1>
+      <h1 className="text-3xl font-extrabold">Home</h1>
 
       <div className="h-[300px] rounded-[20px] bg-hero bg-cover">
-        <div className="h-full flex flex-col justify-between max-md:px-5 max-md:py-8 lg:p-11">
+        <div className="h-full flex flex-col justify-between px-5 py-8 lg:p-11">
           <h2 className="glassmorphism max-w-[270px] rounded py-2 text-center text-base font-normal">
             Upcoming meeting at: 12:30 PM
           </h2>
