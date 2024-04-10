@@ -65,7 +65,7 @@ export function MeetingTypeList() {
   };
 
   return (
-    <section className="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 gap-5">
+    <section className="grid md:grid-cols-2 xl:grid-cols-4 grid-cols-1 gap-5">
       <HomeCard
         title="New Meeting"
         description="Start an instant meeting"
